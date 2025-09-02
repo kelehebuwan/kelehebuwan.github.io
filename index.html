@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>豪华别墅展示</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .villa-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="villa-container">
+        <h1>魏艺晨的大别墅</h1>
+        <!-- 这里嵌入了别墅的SVG代码 -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" width="1000" height="800">
+            <!-- 背景 - 天空 -->
+            <defs>
+                <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#B0E2FF;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="1000" height="800" fill="url(#skyGradient)"/>
+            
+            <!-- 太阳 -->
+            <circle cx="850" cy="100" r="40" fill="#FFD700" opacity="0.8"/>
+            <circle cx="850" cy="100" r="50" fill="#FFA500" opacity="0.3"/>
+            
+            <!-- 远处的小山 -->
+            <path d="M0,500 Q250,400 500,500 T1000,500 L1000,800 L0,800 Z" fill="#7CFC00"/>
+            
+            <!-- 地面 -->
+            <rect y="500" width="1000" height="300" fill="#8FBC8F"/>
+            
+            <!-- 车道 -->
+            <path d="M100,500 L300,450 L300,400" fill="#A9A9A9"/>
+            <rect x="100" y="500" width="200" height="300" fill="#A9A9A9"/>
+            <!-- 车道线条 -->
+            <line x1="150" y1="500" x2="250" y2="460" stroke="white" stroke-width="5" stroke-dasharray="10,10"/>
+            <line x1="150" y1="600" x2="250" y2="560" stroke="white" stroke-width="5" stroke-dasharray="10,10"/>
+            
+            <!-- 主建筑墙体 -->
+            <rect x="350" y="300" width="400" height="200" fill="#F5F5DC"/>
+            <!-- 装饰性墙线 -->
+            <line x1="350" y1="350" x2="750" y2="350" stroke="#D2B48C" stroke-width="2"/>
+            <line x1="350" y1="400" x2="750" y2="400" stroke="#D2B48C" stroke-width="2"/>
+            <line x1="350" y1="450" x2="750" y2="450" stroke="#D2B48C" stroke-width="2"/>
+            
+            <!-- 主建筑屋顶 -->
+            <path d="M320,300 L550,180 L780,300 Z" fill="#8B4513"/>
+            <!-- 屋顶瓦片效果 -->
+            <path d="M320,300 L400,250 L480,300" fill="#6d3510" opacity="0.3"/>
+            <path d="M480,300 L550,260 L620,300" fill="#6d3510" opacity="0.3"/>
+            <path d="M620,300 L690,260 L780,300" fill="#6d3510" opacity="0.3"/>
+            
+            <!-- 右侧翼建筑 -->
+            <rect x="750" y="350" width="150" height="150" fill="#F5F5DC"/>
+            <path d="M730,350 L825,280 L920,350 Z" fill="#8B4513"/>
+            
+            <!-- 左侧翼建筑 -->
+            <rect x="200" y="350" width="150" height="150" fill="#F5F5DC"/>
+            <path d="M180,350 L275,280 L370,350 Z" fill="#8B4513"/>
+            
+            <!-- 中央塔楼 -->
+            <rect x="480" y="200" width="140" height="100" fill="#F5F5DC"/>
+            <path d="M460,200 L550,150 L640,200 Z" fill="#8B4513"/>
+            <circle cx="550" cy="150" r="20" fill="#DAA520"/>
+            
+            <!-- 主门和门廊 -->
+            <rect x="500" y="400" width="60" height="100" fill="#CD853F"/>
+            <circle cx="520" cy="450" r="3" fill="gold"/>
+            <circle cx="540" cy="450" r="3" fill="gold"/>
+            
+            <!-- 门廊 -->
+            <rect x="470" y="400" width="120" height="10" fill="#8B4513"/>
+            <line x1="480" y1="400" x2="480" y2="370" stroke="#8B4513" stroke-width="5"/>
+            <line x1="560" y1="400" x2="560" y2="370" stroke="#8B4513" stroke-width="5"/>
+            <line x1="480" y1="370" x2="560" y2="370" stroke="#8B4513" stroke-width="5"/>
+            
+            <!-- 门前台阶 -->
+            <rect x="490" y="500" width="80" height="10" fill="#D2B48C"/>
+            <rect x="480" y="510" width="100" height="10" fill="#D2B48C"/>
+            <rect x="470" y="520" width="120" height="10" fill="#D2B48C"/>
+            
+            <!-- 主建筑窗户 -->
+            <!-- 前窗 -->
+            <rect x="400" y="330" width="80" height="80" fill="lightblue"/>
+            <line x1="440" y1="330" x2="440" y2="410" stroke="white" stroke-width="2"/>
+            <line x1="400" y1="370" x2="480" y2="370" stroke="white" stroke-width="2"/>
+            <!-- 窗框 -->
+            <rect x="395" y="325" width="90" height="90" fill="none" stroke="#8B4513" stroke-width="3"/>
+            
+            <rect x="580" y="330" width="80" height="80" fill="lightblue"/>
+            <line x1="620" y1="330" x2="620" y2="410" stroke="white" stroke-width="2"/>
+            <line x1="580" y1="370" x2="660" y2="370" stroke="white" stroke-width="2"/>
+            <rect x="575" y="325" width="90" height="90" fill="none" stroke="#8B4513" stroke-width="3"/>
+            
+            <!-- 侧窗 -->
+            <rect x="780" y="380" width="70" height="70" fill="lightblue"/>
+            <line x1="815" y1="380" x2="815" y2="450" stroke="white" stroke-width="2"/>
+            <line x1="780" y1="415" x2="850" y2="415" stroke="white" stroke-width="2"/>
+            <rect x="775" y="375" width="80" height="80" fill="none" stroke="#8B4513" stroke-width="3"/>
+            
+            <rect x="230" y="380" width="70" height="70" fill="lightblue"/>
+            <line x1="265" y1="380" x2="265" y2="450" stroke="white" stroke-width="2"/>
+            <line x1="230" y1="415" x2="300" y2="415" stroke="white" stroke-width="2"/>
+            <rect x="225" y="375" width="80" height="80" fill="none" stroke="#8B4513" stroke-width="3"/>
+            
+            <!-- 塔楼窗户 -->
+            <rect x="510" y="220" width="40" height="50" fill="lightblue"/>
+            <line x1="530" y1="220" x2="530" y2="270" stroke="white" stroke-width="2"/>
+            <line x1="510" y1="245" x2="550" y2="245" stroke="white" stroke-width="2"/>
+            <rect x="505" y="215" width="50" height="60" fill="none" stroke="#8B4513" stroke-width="3"/>
+            
+            <!-- 拱形窗 -->
+            <rect x="450" y="330" width="30" height="80" fill="lightblue"/>
+            <path d="M450,330 A15,15 0 0,1 480,330" fill="lightblue" stroke="#8B4513" stroke-width="3"/>
+            <rect x="445" y="325" width="40" height="5" fill="none" stroke="#8B4513" stroke-width="3"/>
+            
+            <rect x="630" y="330" width="30" height="80" fill="lightblue"/>
+            <path d="M630,330 A15,15 0 0,1 660,330" fill="lightblue" stroke="#8B4513" stroke-width="3"/>
+            <rect x="625" y="325" width="40" height="5" fill="none" stroke="#8B4513" stroke-width="3"/>
+            
+            <!-- 烟囱 -->
+            <rect x="600" y="220" width="40" height="80" fill="#CD5C5C"/>
+            <rect x="590" y="200" width="60" height="20" fill="#CD5C5C"/>
+            <!-- 烟囱顶部细节 -->
+            <line x1="590" y1="200" x2="650" y2="200" stroke="#8B4513" stroke-width="2"/>
+            <line x1="610" y1="190" x2="610" y2="200" stroke="#8B4513" stroke-width="2"/>
+            <line x1="630" y1="190" x2="630" y2="200" stroke="#8B4513" stroke-width="2"/>
+            
+            <!-- 阳台 -->
+            <rect x="220" y="350" width="110" height="10" fill="#8B4513"/>
+            <!-- 阳台栏杆 -->
+            <line x1="230" y1="350" x2="230" y2="330" stroke="#8B4513" stroke-width="3"/>
+            <line x1="260" y1="350" x2="260" y2="330" stroke="#8B4513" stroke-width="3"/>
+            <line x1="290" y1="350" x2="290" y2="330" stroke="#8B4513" stroke-width="3"/>
+            <line x1="320" y1="350" x2="320" y2="330" stroke="#8B4513" stroke-width="3"/>
+            <line x1="230" y1="330" x2="320" y2="330" stroke="#8B4513" stroke-width="3"/>
+            
+            <!-- 右侧阳台 -->
+            <rect x="770" y="350" width="110" height="10" fill="#8B4513"/>
+            <line x1="780" y1="350" x2="780" y2="330" stroke="#8B4513" stroke-width="3"/>
+            <line x1="810" y1="350" x2="810" y2="330" stroke="#8B4513" stroke-width="3"/>
+            <line x1="840" y1="350" x2="840" y2="330" stroke="#8B4513" stroke-width="3"/>
+            <line x1="870" y1="350" x2="870" y2="330" stroke="#8B4513" stroke-width="3"/>
+            <line x1="780" y1="330" x2="870" y2="330" stroke="#8B4513" stroke-width="3"/>
+            
+            <!-- 树木 -->
+            <!-- 大树 -->
+            <rect x="850" y="400" width="20" height="100" fill="#8B4513"/>
+            <circle cx="860" cy="380" r="40" fill="#228B22"/>
+            <circle cx="830" cy="360" r="30" fill="#228B22"/>
+            <circle cx="890" cy="360" r="30" fill="#228B22"/>
+            <circle cx="860" cy="340" r="30" fill="#228B22"/>
+            
+            <rect x="50" y="400" width="20" height="100" fill="#8B4513"/>
+            <circle cx="60" cy="380" r="40" fill="#228B22"/>
+            <circle cx="30" cy="360" r="30" fill="#228B22"/>
+            <circle cx="90" cy="360" r="30" fill="#228B22"/>
+            <circle cx="60" cy="340" r="30" fill="#228B22"/>
+            
+            <!-- 灌木丛 -->
+            <ellipse cx="150" cy="530" rx="30" ry="20" fill="#228B22"/>
+            <ellipse cx="200" cy="540" rx="25" ry="15" fill="#228B22"/>
+            <ellipse cx="700" cy="530" rx="30" ry="20" fill="#228B22"/>
+            <ellipse cx="750" cy="540" rx="25" ry="15" fill="#228B22"/>
+            <ellipse cx="400" cy="530" rx="30" ry="20" fill="#228B22"/>
+            <ellipse cx="600" cy="530" rx="30" ry="20" fill="#228B22"/>
+            
+            <!-- 花园路径 -->
+            <path d="M530,530 C580,550 630,550 680,530" stroke="#D2B48C" stroke-width="15" fill="none"/>
+            
+            <!-- 喷泉 -->
+            <circle cx="600" cy="580" r="20" fill="#D2B48C"/>
+            <circle cx="600" cy="580" r="15" fill="#ADD8E6"/>
+            <circle cx="600" cy="570" r="5" fill="#87CEEB"/>
+            <circle cx="595" cy="575" r="3" fill="#87CEEB"/>
+            <circle cx="605" cy="575" r="3" fill="#87CEEB"/>
+        </svg>
+    </div>
+</body>
+</html>
